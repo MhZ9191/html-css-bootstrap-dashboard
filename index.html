@@ -71,7 +71,7 @@
     <!-- MAIN -->
     <div class="container p-3 mt-3">
       <row class="d-flex flex-wrap">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-8">
           <div class="d-flex justify-content-between">
             <h2 class="text-secondary">Catalogo Libri</h2>
             <button type="button" class="btn btn-primary">
@@ -83,6 +83,9 @@
               <thead>
                 <tr>
                   <th scope="col">Titolo</th>
+                  <th scope="col" class="d-none d-md-table-cell">
+                    <span>Data Prestito</span>
+                  </th>
                   <th scope="col">Stato</th>
                   <th scope="col">
                     <span class="d-block text-center">Azioni</span>
@@ -92,6 +95,7 @@
               <tbody>
                 <tr>
                   <td>I pilastri della terra</td>
+                  <td class="d-none d-md-table-cell">-</td>
                   <td>
                     <button type="button" class="btn btn-success">
                       Disponibile
@@ -122,7 +126,7 @@
             </table>
           </div>
         </div>
-        <div class="col-12 col-lg-6">HELLO</div>
+        <div class="col-12 col-lg-4">HELLO</div>
       </row>
     </div>
     <!-- JS BOOTSTRAP -->
