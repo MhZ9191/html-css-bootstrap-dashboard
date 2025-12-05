@@ -73,7 +73,7 @@
       <div>
         <h1 class="text-align-left fw-semibold py-3">Nuovo libro</h1>
       </div>
-      <form action="#" class="row">
+      <form action="#" class="row gy-3">
         <div class="col-6 fw-semibold">
           <label for="nome-autore" class="form-label text-nowrap"
             >Nome Autore</label
@@ -98,6 +98,37 @@
             aria-describedby="cognome-autore"
           />
         </div>
+        <div class="col-12 fw-semibold">
+          <label for="titolo" class="form-label">Titolo</label>
+          <input
+            placeholder="Inserisci il titolo del libro"
+            type="text"
+            id="titolo"
+            class="form-control"
+            aria-describedby="titoloHelpBlock"
+          />
+          <div id="titolo-help" class="form-text text-secondary">
+            Titolo versione italiana
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 fw-semibold">
+          <label for="genere" class="form-label">Genere</label>
+
+          <select
+            class="form-select"
+            id="genere"
+            aria-label="Default select example"
+          >
+            <option selected>Scegli il genere</option>
+            <option value="1">Horror</option>
+            <option value="2">Romanzo</option>
+            <option value="3">Biografico</option>
+            <option value="4">Fantasy</option>
+            <option value="5">Storico</option>
+          </select>
+        </div>
+        <div class="col col-lg-4 fw-semibold"></div>
+        <div class="col col-lg-4 fw-semibold"></div>
       </form>
     </main>
     <!-- JS BOOTSTRAP -->
