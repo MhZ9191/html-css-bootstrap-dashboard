@@ -69,7 +69,7 @@
       </nav>
     </header>
     <!-- MAIN -->
-    <main class="container mt-3">
+    <main class="container mt-3 mb-3">
       <div>
         <h1 class="text-align-left fw-semibold py-3">Nuovo libro</h1>
       </div>
@@ -149,10 +149,12 @@
             aria-describedby="isbn"
           />
         </div>
-        <hr />
+        <div class="col-12">
+          <div class="border-bottom mt-3 border-secondary-subtle"></div>
+        </div>
 
         <div class="col-12">
-          <div class="mb-3">
+          <div>
             <label for="note" class="form-label fw-semibold">Note</label>
             <textarea
               class="form-control"
@@ -161,6 +163,22 @@
               placeholder="Inserisci eventuali note sul libro"
             ></textarea>
           </div>
+        </div>
+        <div class="col-12 fw-medium">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-digitale"
+            />
+            <label class="form-check-label" for="check-digitale">
+              Disponibile anche in digitale
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary">Aggiungi libro</button>
         </div>
       </form>
     </main>
